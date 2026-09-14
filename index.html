@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <section class="faq" aria-labelledby="faq-title">
+      <h1 id="faq-title">Frequently Asked Questions</h1>
+
+      <div class="faq-list">
+
+        <article class="faq-item">
+          <h2>
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+              id="faq-question-1">
+              What services do you provide?
+            </button>
+          </h2>
+
+          <div
+            id="faq-answer-1"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-question-1"
+            hidden>
+            <p>
+              We provide a range of services designed to support our clients
+              and their individual needs.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <h2>
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+              id="faq-question-2">
+              How do I get started?
+            </button>
+          </h2>
+
+          <div
+            id="faq-answer-2"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-question-2"
+            hidden>
+            <p>
+              Contact our team to discuss your needs and determine the
+              appropriate next steps.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <h2>
+            <button
+              class="faq-question"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+              id="faq-question-3">
+              How can I contact your team?
+            </button>
+          </h2>
+
+          <div
+            id="faq-answer-3"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-question-3"
+            hidden>
+            <p>
+              You can contact our team by phone, email, or through the
+              contact form on our website.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
