@@ -5,7 +5,8 @@ main{padding:60px 20px;}
 .faq h1{margin-bottom:30px;text-align:center;font-size:2rem;}
 .faq-list{display:flex;flex-direction:column;gap:16px;}
 .faq-item{background:#ffffff;border:1px solid #d9dee7;border-radius:8px;overflow:hidden;}
-.faq-question{width:100%;padding:20px;border:0;background:transparent;color:#1f2937;font-size:1rem;font-weight:600;text-align:left;cursor:pointer;}
+..faq-question{width:100%;padding:20px;border:0;background:transparent;color:#1f2937;font-size:1rem;font-weight:600;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.faq-icon{flex-shrink:0;font-size:1.5rem;font-weight:400;line-height:1;}
 .faq-question:hover{background:#f0f3f7;}
 .faq-question:focus-visible{outline:3px solid #2563eb;outline-offset:-3px;}
 .faq-answer{padding:0 20px 20px;}
