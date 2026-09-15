@@ -6,7 +6,17 @@ questions.forEach((question) => {
     const answer = document.getElementById(answerId);
     const isExpanded = question.getAttribute("aria-expanded") === "true";
 
-    question.setAttribute("aria-expanded", String(!isExpanded));
-    answer.hidden = isExpanded;
+    questions.forEach((otherQuestion) => {
+      const otherAnswerId = otherQuestion.getAttribute("aria-controls");
+      const otherAnswer = document.getElementById(otherAnswerId);
+
+      otherQuestion.setAttribute("aria-expanded", "false");
+      otherAnswer.hidden = true;
+    });
+
+    if (!isExpanded) {
+      question.setAttribute("aria-expanded", "true");
+      answer.hidden = false;
+    }
   });
 });
